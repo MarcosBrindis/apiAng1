@@ -1,0 +1,6 @@
+<div class="content-container">
+  <input #dieteIdInput type="number" placeholder="Enter Diete ID">
+  <button (click)="searchDieteById(+dieteIdInput.value)">Search Diete by ID</button>
+</div>
+<app-navegation [dietes]="dietes"></app-navegation>
+<router-outlet></router-outlet>
